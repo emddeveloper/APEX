@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#07111E"/>
+  <rect x="60" y="60" width="1080" height="780" rx="34" fill="#0D1B30" stroke="#1E90FF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M130 720C250 610 350 580 470 500C590 420 710 300 1070 250" stroke="#FF8F1F" stroke-width="10" stroke-linecap="round"/>
+  <path d="M130 760C260 660 380 620 510 560C640 500 760 400 1040 340" stroke="#1E90FF" stroke-width="6" stroke-linecap="round" stroke-opacity="0.75"/>
+  <circle cx="220" cy="650" r="16" fill="#7DD3FC"/>
+  <circle cx="460" cy="520" r="16" fill="#7DD3FC"/>
+  <circle cx="760" cy="380" r="16" fill="#7DD3FC"/>
+  <circle cx="980" cy="285" r="16" fill="#FFB56A"/>
+  <text x="110" y="128" fill="#E6EDF7" font-size="48" font-family="Arial, sans-serif">Feeder Corridor</text>
+  <text x="110" y="180" fill="#7DD3FC" font-size="26" font-family="Arial, sans-serif">Distribution Strengthening Visual</text>
+</svg>

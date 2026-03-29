@@ -1,0 +1,20 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#06101D"/>
+  <rect x="50" y="50" width="1100" height="800" rx="34" fill="url(#a)" stroke="rgba(255,255,255,0.12)"/>
+  <path d="M110 720H1090" stroke="#1E90FF" stroke-opacity="0.28" stroke-width="4"/>
+  <path d="M210 240V720M420 200V720M630 170V720M840 225V720" stroke="#7DD3FC" stroke-opacity="0.25" stroke-width="6"/>
+  <rect x="330" y="370" width="190" height="190" rx="22" fill="#10233D" stroke="#1E90FF" stroke-opacity="0.4" stroke-width="4"/>
+  <rect x="620" y="330" width="240" height="240" rx="26" fill="#112946" stroke="#FF8F1F" stroke-opacity="0.42" stroke-width="4"/>
+  <path d="M720 270V170M760 270V150M800 270V190" stroke="#7DD3FC" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="720" cy="270" r="10" fill="#1E90FF"/>
+  <circle cx="760" cy="270" r="10" fill="#1E90FF"/>
+  <circle cx="800" cy="270" r="10" fill="#1E90FF"/>
+  <text x="100" y="118" fill="#E6EDF7" font-size="48" font-family="Arial, sans-serif">765 kV Yard</text>
+  <text x="100" y="170" fill="#7DD3FC" font-size="26" font-family="Arial, sans-serif">Bay Integration Visual</text>
+  <defs>
+    <linearGradient id="a" x1="600" y1="50" x2="600" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1728"/>
+      <stop offset="1" stop-color="#0A1220"/>
+    </linearGradient>
+  </defs>
+</svg>

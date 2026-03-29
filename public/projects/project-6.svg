@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#06101C"/>
+  <rect x="60" y="60" width="1080" height="780" rx="36" fill="#0C1524"/>
+  <rect x="180" y="260" width="840" height="380" rx="32" fill="#0F1D31" stroke="#1E90FF" stroke-opacity="0.25" stroke-width="3"/>
+  <path d="M220 360H980M220 450H980M220 540H980" stroke="#1E90FF" stroke-opacity="0.38" stroke-width="6"/>
+  <path d="M260 320V580M440 320V580M620 320V580M800 320V580" stroke="#FF8F1F" stroke-opacity="0.35" stroke-width="4"/>
+  <text x="110" y="128" fill="#E6EDF7" font-size="48" font-family="Arial, sans-serif">Switchyard Interface</text>
+  <text x="110" y="180" fill="#7DD3FC" font-size="26" font-family="Arial, sans-serif">Power House Integration Visual</text>
+</svg>

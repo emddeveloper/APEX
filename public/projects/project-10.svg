@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#06101C"/>
+  <rect x="60" y="60" width="1080" height="780" rx="36" fill="#0C1627"/>
+  <path d="M170 620C320 620 370 340 520 340C670 340 720 620 870 620C930 620 982 570 1020 510" stroke="#1E90FF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M170 680C320 680 370 400 520 400C670 400 720 680 870 680C930 680 982 620 1020 560" stroke="#FF8F1F" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="170" cy="620" r="14" fill="#7DD3FC"/>
+  <circle cx="520" cy="340" r="14" fill="#7DD3FC"/>
+  <circle cx="870" cy="620" r="14" fill="#7DD3FC"/>
+  <circle cx="1020" cy="510" r="14" fill="#FFB56A"/>
+  <text x="110" y="128" fill="#E6EDF7" font-size="48" font-family="Arial, sans-serif">Underground Utility</text>
+  <text x="110" y="180" fill="#7DD3FC" font-size="26" font-family="Arial, sans-serif">Cable Network Visual</text>
+</svg>

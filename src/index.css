@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --base: #070b14;
+  --panel: #0f1726;
+  --steel: #162033;
+  --line: rgba(125, 211, 252, 0.14);
+  --electric: #1e90ff;
+  --spark: #ff8f1f;
+  --text: #e6edf7;
+  --muted: #9ca7ba;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(30, 144, 255, 0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255, 143, 31, 0.12), transparent 24%),
+    var(--base);
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(125, 211, 252, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 211, 252, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent 85%);
+  pointer-events: none;
+  z-index: -2;
+}
+
+.page-shell::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(30, 144, 255, 0.15), transparent 22%),
+    radial-gradient(circle at 88% 72%, rgba(255, 143, 31, 0.12), transparent 20%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-space {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.section-surface {
+  @apply rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl;
+}
+
+.eyebrow {
+  @apply mb-3 inline-flex items-center gap-2 rounded-full border border-electric/35 bg-electric/10 px-4 py-2 font-display text-sm uppercase tracking-[0.28em] text-glow;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(8, 14, 26, 0.92), rgba(8, 14, 26, 0.82)),
+    radial-gradient(circle at 50% 25%, rgba(30, 144, 255, 0.18), transparent 40%);
+}
+
+.hero-grid::before,
+.hero-grid::after {
+  content: '';
+  position: absolute;
+  inset: -20%;
+  background-image:
+    linear-gradient(rgba(125, 211, 252, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 211, 252, 0.14) 1px, transparent 1px);
+  background-size: 70px 70px;
+  transform: perspective(1000px) rotateX(72deg) translateY(-5%);
+  transform-origin: center center;
+  animation: grid-pan 18s linear infinite;
+}
+
+.hero-grid::after {
+  inset: 12% -10% auto;
+  height: 45%;
+  background:
+    linear-gradient(90deg, transparent, rgba(30, 144, 255, 0.4), transparent),
+    linear-gradient(90deg, transparent, rgba(255, 143, 31, 0.3), transparent);
+  filter: blur(24px);
+  animation: beam-move 7s ease-in-out infinite;
+}
+
+.pulse-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9), rgba(30, 144, 255, 0.6));
+  box-shadow: 0 0 18px rgba(30, 144, 255, 0.9);
+  animation: pulse 3.2s ease-in-out infinite;
+}
+
+.signal-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(30, 144, 255, 0.95), transparent);
+  box-shadow: 0 0 18px rgba(30, 144, 255, 0.6);
+  animation: spark-run 4.8s linear infinite;
+}
+
+.signal-line.spark {
+  background: linear-gradient(90deg, transparent, rgba(255, 143, 31, 0.95), transparent);
+  box-shadow: 0 0 18px rgba(255, 143, 31, 0.6);
+}
+
+.grid-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(10, 15, 27, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 22px 50px rgba(0, 0, 0, 0.32);
+}
+
+.primary-btn {
+  @apply inline-flex items-center justify-center rounded-full border border-electric/40 bg-electric px-6 py-3 font-body text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#42a5ff];
+  box-shadow: 0 14px 35px rgba(30, 144, 255, 0.26);
+}
+
+.secondary-btn {
+  @apply inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 font-body text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-spark/55 hover:bg-spark/10;
+}
+
+.card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  inset: auto -20% -35% auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(30, 144, 255, 0.18), transparent 70%);
+  filter: blur(18px);
+  transition: transform 0.4s ease;
+}
+
+.card-glow:hover::before {
+  transform: translate(-12px, -12px);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ffffff 10%, #7dd3fc 58%, #ffb56a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.map-frame {
+  filter: grayscale(0.15) saturate(0.9) contrast(1.05);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0.85);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.55);
+    opacity: 1;
+  }
+}
+
+@keyframes grid-pan {
+  0% {
+    transform: perspective(1000px) rotateX(72deg) translateY(-5%) translateX(0);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(72deg) translateY(10%) translateX(-60px);
+  }
+}
+
+@keyframes spark-run {
+  0% {
+    transform: translateX(-12%);
+    opacity: 0;
+  }
+  15%,
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+}
+
+@keyframes beam-move {
+  0%,
+  100% {
+    transform: translateX(-8%) skewX(-25deg);
+  }
+  50% {
+    transform: translateX(8%) skewX(-25deg);
+  }
+}

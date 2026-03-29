@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#06101B"/>
+  <rect x="60" y="60" width="1080" height="780" rx="36" fill="#0C1524"/>
+  <rect x="270" y="260" width="220" height="310" rx="26" fill="#10243B" stroke="#1E90FF" stroke-width="4" stroke-opacity="0.4"/>
+  <rect x="610" y="240" width="260" height="330" rx="28" fill="#112A46" stroke="#FF8F1F" stroke-width="4" stroke-opacity="0.45"/>
+  <path d="M380 260V180M700 240V160M780 240V140" stroke="#7DD3FC" stroke-width="8" stroke-linecap="round"/>
+  <path d="M170 650H1030" stroke="#1E90FF" stroke-opacity="0.24" stroke-width="4"/>
+  <circle cx="380" cy="260" r="12" fill="#7DD3FC"/>
+  <circle cx="700" cy="240" r="12" fill="#7DD3FC"/>
+  <circle cx="780" cy="240" r="12" fill="#FF8F1F"/>
+  <text x="110" y="128" fill="#E6EDF7" font-size="48" font-family="Arial, sans-serif">HT Commissioning</text>
+  <text x="110" y="180" fill="#7DD3FC" font-size="26" font-family="Arial, sans-serif">Testing Package Visual</text>
+</svg>

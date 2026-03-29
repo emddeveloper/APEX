@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#06111F"/>
+  <rect x="55" y="55" width="1090" height="790" rx="34" fill="#0C1728"/>
+  <path d="M170 690L360 480L540 560L760 330L980 400" stroke="#1E90FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M170 730L360 520L540 600L760 370L980 440" stroke="#FF8F1F" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="170" cy="690" r="14" fill="#7DD3FC"/>
+  <circle cx="360" cy="480" r="14" fill="#7DD3FC"/>
+  <circle cx="540" cy="560" r="14" fill="#7DD3FC"/>
+  <circle cx="760" cy="330" r="14" fill="#7DD3FC"/>
+  <circle cx="980" cy="400" r="14" fill="#FFB56A"/>
+  <text x="110" y="128" fill="#E6EDF7" font-size="48" font-family="Arial, sans-serif">Rural Network</text>
+  <text x="110" y="180" fill="#FFB56A" font-size="26" font-family="Arial, sans-serif">Line Augmentation Visual</text>
+</svg>
