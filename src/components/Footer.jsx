@@ -48,7 +48,19 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} {company.name}. All rights reserved.
+        <span>@2026 All rights reserved. </span>
+        <span>{company.name}. </span>
+        <span>
+          Design by{' '}
+          <a
+            href="https://www.saypinfotech.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-slate-300 transition hover:text-white"
+          >
+            SAYP INFOTECH
+          </a>
+        </span>
       </div>
     </footer>
   )
